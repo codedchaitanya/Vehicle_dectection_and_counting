@@ -97,9 +97,9 @@ cap = cv2.VideoCapture(DSET_FOLDER)
 count = 0
 while True:
     ret, frame = cap.read()
-    frame= cv2.resize(frame, (1080, 720))
     if not ret:
         break
+    frame = cv2.resize(frame, (1080, 720))
     if(len(frames)!=BATCH_SIZE):
         frames.append(frame)
     else:

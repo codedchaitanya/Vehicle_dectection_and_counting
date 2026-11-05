@@ -8,9 +8,9 @@ vid_path = "../datasets/Patiala CCTV/14_h265_20231216184310.mp4"
 cap = cv2.VideoCapture(vid_path)
 while cap.isOpened():
     ret, frame = cap.read()
-    frame = cv2.resize(frame, (1080, 720))
     if not ret:
         break
+    frame = cv2.resize(frame, (1080, 720))
 
     datetime = frame[0:40, 140:260]
     datetime = cv2.cvtColor(datetime, cv2.COLOR_BGR2GRAY)

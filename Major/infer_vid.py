@@ -9,8 +9,8 @@ filename = "14_h265_20231216184310.mp4_xxx"
 vid = cv2.VideoCapture("../datasets/Patiala CCTV/14_h265_20231216184310.mp4")
 annotation_path = f"./annotations/{filename}/"
 video_path = f"./video/{filename}/"
-os.makedirs(video_path)
-os.makedirs(annotation_path)
+os.makedirs(video_path, exist_ok=True)
+os.makedirs(annotation_path, exist_ok=True)
 # model.predict(vid, save=True,save_txt=True, save_conf=True,half=True, agnostic_nms=True,classes=[0,1,2,3,5,7])
 BATCH_SIZE = 32
 frames = []
