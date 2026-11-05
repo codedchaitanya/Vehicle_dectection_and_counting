@@ -82,8 +82,8 @@ DOWN_LINE = ((60, 200), (340, 380))
 Python 3.9 or later.
 
 ```bash
-git clone https://github.com/codedchaitanya/Vehicle_dectection_and_counting.git
-cd Vehicle_dectection_and_counting
+git clone https://github.com/codedchaitanya/Vehicle_detection_and_counting.git
+cd Vehicle_detection_and_counting
 
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
