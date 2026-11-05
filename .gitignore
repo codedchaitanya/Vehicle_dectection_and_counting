@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.idea/
+.vscode/
+
+# Run outputs
+*.log
+runs/
+
+# Model weights (downloaded automatically by Ultralytics on first run)
+*.pt
+
+# OS
+.DS_Store
+Thumbs.db

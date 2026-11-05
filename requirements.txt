@@ -1,0 +1,13 @@
+# Counting pipeline (Major/track.py)
+ultralytics>=8.3.0      # YOLOv8 detection and tracking; installs PyTorch
+lap>=0.5.12             # needed by the YOLOv8 tracker for track association
+opencv-python>=4.8.0    # video input, drawing, display window
+
+# Development scripts only (dataset analysis, plots)
+numpy>=1.24.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+pyyaml>=6.0
+
+# Optional: template_matching.py also needs the Tesseract OCR program installed on the system
+# pytesseract>=0.3.10
